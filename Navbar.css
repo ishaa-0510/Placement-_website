@@ -1,0 +1,86 @@
+/* src/components/Navbar/Navbar.css */
+
+nav {
+  width: 100%; /* Set the width to a percentage for responsiveness */
+  max-width: 1800px; /* Set a maximum width */
+  color: #fff;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Center the navbar */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between the logo and the nav items */
+  z-index: 100;
+  background: #444; /* Darker gray background for the navbar */
+  border-radius: 5px; /* Border radius for a better look */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add some shadow for depth */
+}
+
+.logo {
+  width: 100px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+  font-size: 16px;
+}
+
+.dark-nav {
+  background: #444; /* Ensuring the dark background for the navbar */
+  transition: 0.5s;
+}
+
+.menu-icon {
+  display: none;
+}
+
+/* ----- media query ----------- */
+
+@media (max-width: 1000px) {
+  .logo {
+    width: 140px;
+  }
+  nav ul li {
+    margin: 10px 10px;
+  }
+}
+
+@media (max-width: 840px) {
+  nav {
+    width: 90%;
+    padding: 15px 10px;
+  }
+  nav ul {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #444; /* Darker gray background for the navbar */
+    z-index: 9;
+    width: 200px;
+    padding-top: 70px;
+    transition: 0.5s;
+    flex-direction: column;
+  }
+  nav ul li {
+    margin: 15px 0;
+  }
+  .menu-icon {
+    display: block;
+    width: 30px;
+    cursor: pointer;
+  }
+  .hide-mobile-menu {
+    right: -200px;
+  }
+}

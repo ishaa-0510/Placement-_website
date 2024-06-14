@@ -1,0 +1,71 @@
+/* src/components/PastDrives/PastDrives.css */
+
+.past-drives-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 40px 20px;
+  background: #f0f4f8;
+}
+
+.past-drive {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 300px;
+  width: 100%;
+}
+
+.past-drive:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.company-logo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.caption {
+  padding: 20px;
+  text-align: center;
+}
+
+.program-icon {
+  width: 50px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.company-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0;
+}
+
+.job-description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.doc-link {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.doc-link:hover {
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  transform: translateY(-3px);
+}
